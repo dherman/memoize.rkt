@@ -2,8 +2,6 @@
 
 (provide define/memo memo-lambda define/memo* memo-lambda*)
 
-(define undefined (letrec ([x x]) x))
-
 (define (assoc/inner-eq arglist cache)
   (cond
     [(null? cache) #f]
